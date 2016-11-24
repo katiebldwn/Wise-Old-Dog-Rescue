@@ -45,7 +45,7 @@ function initMap() {
 				})
 
 
-				$.getJSON( "http://api.petfinder.com/shelter.find?format=json&key=098529fe3eb8ab94d6e0b43f456c889e&location="+searchTerm+"&animal=dog&callback=?", function( json ) {
+				$.getJSON( "https://api.petfinder.com/shelter.find?format=json&key=098529fe3eb8ab94d6e0b43f456c889e&location="+searchTerm+"&animal=dog&callback=?", function( json ) {
 					var allShelters = [];
 						console.log(allShelters);
 						for (i=0; i<15; i++) {
