@@ -131,10 +131,10 @@ body.noScroll {
 	color: #03a9f4;
 }
 
-/*.page__title-sub {
+.page__title-sub {
 	font-size: 1.05em;
 	margin: 0.5em 0 4em;
-}*/
+}
 
 @-webkit-keyframes quote {
 	from {
@@ -170,12 +170,12 @@ body.noScroll {
     z-index: 100;
 }
 
-/*.button--hidden {
+.button--hidden {
 	pointer-events: none;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
-}*/
+}
 
 .grid {
 	position: relative;
@@ -255,7 +255,7 @@ a.grid__link.F {
 	opacity: 0;
 }
 
-/*.view--loaded .grid,
+.view--loaded .grid,
 .view--loaded .device,
 .view--loaded .button--view {
 	opacity: 1;
@@ -264,15 +264,15 @@ a.grid__link.F {
 .view--loaded .button--view {
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
-}*/
+}
 
-/*.js .page--static {
+.js .page--static {
 	pointer-events: none;
-}*/
+}
 
-/*.view--grid .page--static {
+.view--grid .page--static {
 	pointer-events: auto;
-}*/
+}
 
 
 @media screen and (max-width: 56em) {

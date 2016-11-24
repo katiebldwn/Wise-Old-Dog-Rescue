@@ -6,11 +6,11 @@ function initMap() {
 			});
 		}
 
-			$('.searchZip').click(function() {
-				$('.grid').layout({
-    				itemMargin : 5,
-    				itemPadding : 5
-				});
+		$('.searchZip').click(function() {
+				// $('.grid').layout({
+    // 				itemMargin : 5,
+    // 				itemPadding : 5
+				// });
 				$('p.searchHere input').hide();
 				$('body').removeClass('noScroll');
 				$('#map').show();
