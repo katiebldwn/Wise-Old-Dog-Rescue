@@ -20,7 +20,7 @@ function initMap() {
 				var searchTerm = $('p.searchHere input').val();
 				$('.page__title-main').text('Results for ' + searchTerm);
 				$('.grid').html('');
-				$.getJSON( "http://api.petfinder.com/pet.find?format=json&key=098529fe3eb8ab94d6e0b43f456c889e&animal=dog&age=senior&location="+searchTerm+"&callback=?", function( pets ) {
+				$.getJSON( "https://api.petfinder.com/pet.find?format=json&key=098529fe3eb8ab94d6e0b43f456c889e&animal=dog&age=senior&location="+searchTerm+"&callback=?", function( pets ) {
 					var pet1 = pets.petfinder.pets.pet;
 					console.log(pet1);
 					$.each(pet1, function() {
