@@ -26,12 +26,12 @@ a {
 .searchHere {
     left: 37%;
     position: fixed;
-    top: 30%;
+    top: 37%;
     z-index: 2147483647;
 }
 
 p.searchHere input {
-	border: 1px solid #df2d70;
+	border: 3px solid #df2d70;
 }
 
 .js body {
