@@ -1,0 +1,22 @@
+{
+  "name": "fewd-capstone-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katiebldwn/Wise-Old-Dog-Rescue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katiebldwn/Wise-Old-Dog-Rescue/issues"
+  },
+  "homepage": "https://github.com/katiebldwn/Wise-Old-Dog-Rescue#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
