@@ -23,6 +23,13 @@ a {
 	outline: none;
 }
 
+.title-pawprint {
+	width: 70px;
+	height: 70px;
+}
+
+
+
 .searchHere {
     left: 37%;
     position: fixed;

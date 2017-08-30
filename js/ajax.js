@@ -82,7 +82,7 @@ function initMap() {
 				        position: new google.maps.LatLng(allShelters[i][1], allShelters[i][2]),
 				        map: map,
 				        title: allShelters[i][0],
-						icon: 'http://katie.thinkful.us/pawprint.png'
+						icon: 'img/Pawprint-SMALL.png'
 				      });
 
 				      google.maps.event.addListener(marker, 'click', (function(marker, i) {
