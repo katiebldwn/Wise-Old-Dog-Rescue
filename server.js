@@ -1,8 +1,12 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
 
 
-app.use(express.static("/"));
+app.use(express.static('/'));
+
+app.use(bodyParser.json());
+
 
 
 app.get("/", (request, response) => {
