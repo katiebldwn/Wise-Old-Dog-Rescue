@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/katiebldwn/Wise-Old-Dog-Rescue#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4"
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "morgan": "^1.9.0"
   }
 }
