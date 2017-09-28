@@ -184,9 +184,6 @@
 		};
 		window.addEventListener('scroll', scrollfn);
 
-		// todo: show/load more grid items
-		// loadMoreCtrl.addEventListener('click', loadNextItems);
-
 		// window resize: recalculate window sizes and reposition the 6 grid items behind the phone (if the grid view is not yet shown)
 		window.addEventListener('resize', debounce(function(ev) {
 			// reset window sizes
@@ -223,27 +220,6 @@
 		// hide the showGrid ctrl
 		dynamics.css(showGridCtrl, {display: 'none'});
 
-		// // main title animation
-		// dynamics.animate(titleEl, { translateY: -winsize.height/2, opacity: 0 }, {
-		// 	type: dynamics.bezier,
-		// 	points: [{"x":0,"y":0,"cp":[{"x":0.7,"y":0}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}],
-		// 	duration: 600
-		// });
-
-		// // main subtitle animation
-		// dynamics.animate(subtitleEl, { translateY: -winsize.height/2, opacity: 0 }, {
-		// 	type: dynamics.bezier,
-		// 	points: [{"x":0,"y":0,"cp":[{"x":0.7,"y":0}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}],
-		// 	duration: 600,
-		// 	delay: 100
-		// });
-
-		// // device animation
-		// dynamics.animate(deviceEl, { translateY: 500, opacity: 0 }, {
-		// 	type: dynamics.bezier,
-		// 	points: [{"x":0,"y":0,"cp":[{"x":0.7,"y":0}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}],
-		// 	duration: 600
-		// });
 
 		// h1 title animation
 		dynamics.animate(titleEl, { translateY: -winsize.height/2, opacity: 0 }, {
@@ -266,47 +242,6 @@
 				classie.add(mainContainer, 'view--grid');
 			}
 		});
-		// // items animation
-		// gridItems.slice(0,6).forEach(function(item, pos) {
-		// 	dynamics.stop(item);
-		// 	dynamics.animate(item, { scale: 1, translateX: 0, translateY: 0, rotateZ: 0 }, {
-		// 		type: dynamics.spring,
-		// 		duration: scrolled ? 2400 : 2400,
-		// 		frequency: 400,
-		// 		friction: 400,
-		// 		delay: scrolled ? 0 : pos * 30 + 100
-		// 	});
-		// });
-
-		// // page title animation
-		// dynamics.css(pageTitleEl, { translateY: 200, opacity: 0 });
-		// dynamics.animate(pageTitleEl, { translateY: 0, opacity: 1 }, {
-		// 	type: dynamics.bezier,
-		// 	points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}],
-		// 	duration: 800,
-		// 	delay: 400
-		// });
-
-		// // page subtitle animation
-		// dynamics.css(pageSubTitleEl, { translateY: 150, opacity: 0 });
-		// dynamics.animate(pageSubTitleEl, { translateY: 0, opacity: 1 }, {
-		// 	type: dynamics.bezier,
-		// 	points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}],
-		// 	duration: 800,
-		// 	delay: 500
-		// });
-
-		// // the remaining grid items
-		// gridItems.slice(6).forEach(function(item) {
-		// 	dynamics.css(item, { scale: 0, opacity: 0 });
-		// 	dynamics.animate(item, { scale: 1, opacity: 1 }, {
-		// 		type: dynamics.spring,
-		// 		duration: 2000,
-		// 		frequency: 400,
-		// 		friction: 400,
-		// 		delay: randomIntFromInterval(100,400)
-		// 	});
-		// });
 	}
 	
 	init();
